@@ -5,3 +5,10 @@
 * {
   font-family: Outfit;
 }
+
+.transform-minus-16 {
+  transform: translateX(-16rem);
+}
+.transform-plus-16 {
+  transform: translateX(16rem);
+}

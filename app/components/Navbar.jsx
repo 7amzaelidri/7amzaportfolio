@@ -6,10 +6,14 @@ const Navbar = () => {
 
     const sideMenuRef = useRef();
     const openMenu = () => {
-        sideMenuRef.current.style.transform = 'translateX(-16rem)';
+        // sideMenuRef.current.style.transform = 'translateX(-16rem)';
+        sideMenuRef.current.classList.add('transform-minus-16')
+        sideMenuRef.current.classList.remove('transform-plus-16')
     }
     const closeMenu = () => {
-        sideMenuRef.current.style.transform = 'translateX(16rem)';
+        // sideMenuRef.current.style.transform = 'translateX(16rem)';
+         sideMenuRef.current.classList.add('transform-plus-16')
+        sideMenuRef.current.classList.remove('transform-minus-16')
     }
     return (
         <div>
