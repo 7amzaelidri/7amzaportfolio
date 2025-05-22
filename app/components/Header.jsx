@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+        <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4' id='top'>
             <div>
                 <Image src={assets.profile_img} alt='profile imgage' className='rounded-full w-32'></Image>
             </div>

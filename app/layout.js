@@ -1,5 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -20,10 +21,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8 owerflow-x-hidden`}
       >
+      <Navbar/>
         {children}
       </body>
     </html>
