@@ -33,15 +33,15 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
     return (
         <div>
 
-            <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
+            {/* <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
                 <Image src={assets.header_bg_color} alt='header-bg-color' className='w-full'></Image>
-            </div>
+            </div> */}
 
 
 
             <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-md dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
                 <a href="#top" >
-                    <Image src={isDarkMode ? assets.logo_dark : assets.logo} className='w-28 cursor-pointer mr-14' alt='logo'></Image>
+                    <div className='w-28 cursor-pointer text-2xl mr-14'>7amza <span className='text-4xl text-red-700'>.</span></div>{/* <Image src={isDarkMode ? assets.logo_dark : assets.logo} className='w-28 cursor-pointer mr-14' alt='logo'></Image> */}
                 </a>
 
 
@@ -66,12 +66,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
                     <a href="#contact" className='hidden lg:flex items-center gap-3 px-10
                         py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo  dark:border-white/50'>Contact
-                        <Image src={isDarkMode ? assets.arrow_icon_dark :  assets.arrow_icon} className='w-3' alt='arrow icon'></Image>
+                        <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} className='w-3' alt='arrow icon'></Image>
                     </a>
 
 
                     <button className='block md:hidden ml-3' onClick={openMenu}>
-                        <Image src={isDarkMode ?  assets.menu_white : assets.menu_black} className='w-6 cursor-pointer ' alt='moon icon'></Image>
+                        <Image src={isDarkMode ? assets.menu_white : assets.menu_black} className='w-6 cursor-pointer ' alt='moon icon'></Image>
                     </button>
 
 
