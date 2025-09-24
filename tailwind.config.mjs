@@ -8,9 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-          lightHover: '#fcf4ff',
-          darkHover: '#2a004a',
-          darkTheme: '#11001F',
+        lightHover: '#CCFFB8',
+        darkHover: '#1fea00',
+        darkTheme: '#000000',
+        darkNav: '#00000070',
       },
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
@@ -21,10 +22,10 @@ export default {
         'white': '4px 4px 0 #fff',
       },
       gridTemplateColumns: {
-        'auto' : 'repeat(auto-fit, minmax(200px, 1fr))'
+        'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
       }
     },
   },
-  darkMode:'selector',
+  darkMode: 'selector',
   plugins: [],
 };

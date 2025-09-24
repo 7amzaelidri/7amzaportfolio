@@ -1,9 +1,9 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React , { useState } from 'react'
+import React, { useState } from 'react'
 
-const Contact = ( ) => {
-     const [result, setResult] = useState("");
+const Contact = () => {
+    const [result, setResult] = useState("");
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -45,14 +45,14 @@ const Contact = ( ) => {
             <form className='max-w-2xl mx-auto' onSubmit={onSubmit}>
                 <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
                     <input type="text" placeholder="Enter your Name" required
-                        className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90' name='name'/>
+                        className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/10 dark:border-white/90' name='name' />
                     <input type="email" placeholder="Enter your Email" required
-                        className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90' name='email'/>
+                        className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/10 dark:border-white/90' name='email' />
                 </div>
 
 
-                <textarea rows='6' placeholder="Enter your Message" required    
-                    className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90' name='message'
+                <textarea rows='6' placeholder="Enter your Message" required
+                    className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/10 dark:border-white/90' name='message'
                 ></textarea>
                 <button type='submit'
                     className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'

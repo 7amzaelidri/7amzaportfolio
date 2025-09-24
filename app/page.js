@@ -37,6 +37,7 @@ export default function Home() {
   }, [isDarkMode]);
 
 
+
   return (
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
